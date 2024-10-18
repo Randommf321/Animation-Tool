@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-A-Sketch Animator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <canvas id="canvas" width="600" height="400"></canvas>
+
+        <!-- Frame Controls -->
+        <div id="controls">
+            <button id="prev-frame">Previous Frame</button>
+            <button id="next-frame">Next Frame</button>
+            <button id="add-frame">Add Frame</button>
+            <button id="duplicate-frame">Duplicate Frame</button> <!-- New duplicate frame button -->
+            <button id="play-animation">Play Animation</button>
+            <button id="erase">Eraser</button>
+            <button id="remove-frame">Remove Frame</button>
+        </div>
+
+        <!-- Tools for brush size and color -->
+        <div id="tools">
+            <label for="brush-size">Brush Size: </label>
+            <input type="range" id="brush-size" min="1" max="10" value="2">
+            <label for="color-picker">Color: </label>
+            <input type="color" id="color-picker" value="#000000">
+        </div>
+
+        <!-- Frame preview section -->
+        <div id="frame-preview-container">
+            <h3>Frames:</h3>
+            <div id="frame-preview-box"></div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
